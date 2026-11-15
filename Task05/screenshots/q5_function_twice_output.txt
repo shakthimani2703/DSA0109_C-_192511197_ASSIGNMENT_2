@@ -1,0 +1,11 @@
+$ g++ -std=c++17 -Wall -Wextra q5_function_twice.cpp -o q5_function_twice
+$ ./q5_function_twice
+Call 1 of morningTrip():
+  Asha: Seat 1
+  Bala: Seat 2
+  Issued so far: 2
+Call 2 of morningTrip():
+  Asha: Seat 3
+  Bala: Waiting
+  Issued so far: 3
+Final issued: 3

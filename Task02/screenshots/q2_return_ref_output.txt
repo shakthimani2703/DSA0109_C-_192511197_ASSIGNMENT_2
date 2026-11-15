@@ -1,0 +1,9 @@
+$ g++ -std=c++17 -Wall -Wextra q2_return_ref.cpp -o q2_return_ref
+$ ./q2_return_ref
+Original register     : 72 88 65 91 79 84 
+After highest() += 2  : 72 88 65 93 79 84 
+After highest() = 95  : 72 88 65 95 79 84 
+Const reference reads : 95
+Copy changed to       : 97
+Register unchanged    : 72 88 65 95 79 84 
+top after marks[3]=60 : 60  (it still names marks[3])

@@ -1,0 +1,3 @@
+$ g++ -std=c++17 -Wall -Wextra q6_complete.cpp -o q6_complete
+$ ./q6_complete
+205 false

@@ -1,0 +1,20 @@
+$ g++ -std=c++17 -Wall -Wextra q1_three_ways.cpp -o q1_three_ways
+$ ./q1_three_ways
+Starting fee: 60000
+
+Call by value (merit 10%):
+  inside byValue    : 54000
+  stored fee after call: 60000
+
+Call by reference (merit 10%):
+  inside byReference: 54000
+  stored fee after call: 54000
+
+Call by pointer (sports 15%):
+  inside byPointer  : 45900
+  stored fee after call: 45900
+
+Chained concessions with the returning version:
+  original fee kept : 60000
+  fee after all three: 34425
+Kavin (192511001) fee = 34425

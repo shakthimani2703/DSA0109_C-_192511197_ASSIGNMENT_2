@@ -1,0 +1,10 @@
+$ g++ -std=c++17 -Wall -Wextra q3_alternative.cpp -o q3_alternative
+$ ./q3_alternative
+struct  2.5 kg                       : 100.00
+struct  1.2 kg express               : 110.00
+struct  3.2 kg express+insured+fragile: 243.00
+template chargeT(500)   [W=int]      : 50.00
+template chargeT(2.5)   [W=double]   : 100.00
+template chargeT(2.0f)  [W=float]    : 80.00
+template chargeT(750L,true) [W=long] : 110.00
+sizeof(ParcelRequest) = 16 bytes (copied only if passed by value)

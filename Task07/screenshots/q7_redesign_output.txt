@@ -1,0 +1,16 @@
+$ g++ -std=c++17 -Wall -Wextra -O2 q7_redesign.cpp -o q7_redesign
+$ ./q7_redesign
+Correctness: identical mini-statements for 100,000 random transactions
+  K=10   : MATCH
+  K=50   : MATCH
+  K=500  : MATCH
+
+Time per transaction (1000000 deposits, g++ -O2) and memory
+     K    original(ns) redesigned(ns)    speed-up  orig bytes   new bytes
+    10           8.65           3.12        2.8x        256        272
+    50          21.17           3.52        6.0x       1216       1232
+   500          91.35           3.29       27.8x      12016      12032
+  5000        2159.92           3.38      639.3x     120016     120032
+
+Run-time capacity: one compiled program serves both banks' policies
+  ATM account keeps 10, branch account keeps 50 transactions

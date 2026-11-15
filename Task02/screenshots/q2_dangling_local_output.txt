@@ -1,0 +1,10 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q2_dangling_local.cpp -o q2_dangling_local
+q2_dangling_local.cpp: In function ‘int& moderatedMark(int)’:
+q2_dangling_local.cpp:9:12: warning: reference to local variable ‘moderated’ returned [-Wreturn-local-addr]
+    9 |     return moderated;           // the frame is destroyed when the function returns
+      |            ^~~~~~~~~
+q2_dangling_local.cpp:8:9: note: declared here
+    8 |     int moderated = mark + 2;   // lives in this function's stack frame
+      |         ^~~~~~~~~
+$ ./q2_dangling_local
+Segmentation fault

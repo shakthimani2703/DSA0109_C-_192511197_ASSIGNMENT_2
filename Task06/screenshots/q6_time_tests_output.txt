@@ -1,0 +1,10 @@
+$ g++ -std=c++17 -Wall -Wextra q6_time_tests.cpp -o q6_time_tests
+$ ./q6_time_tests
+09:45 vs 13:10 -> minutes  205 (expected  205), earlier true (expected true)  PASS
+13:10 vs 09:45 -> minutes  205 (expected  205), earlier false (expected false)  PASS
+11:50 vs 12:05 -> minutes   15 (expected   15), earlier true (expected true)  PASS
+12:00 vs 12:00 -> minutes    0 (expected    0), earlier false (expected false)  PASS
+07:30 vs 07:30 -> minutes    0 (expected    0), earlier false (expected false)  PASS
+00:00 vs 23:59 -> minutes 1439 (expected 1439), earlier true (expected true)  PASS
+12:30 vs 12:31 -> minutes    1 (expected    1), earlier true (expected true)  PASS
+All tests passed

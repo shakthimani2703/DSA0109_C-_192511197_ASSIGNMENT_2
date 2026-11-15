@@ -1,0 +1,14 @@
+$ g++ -std=c++17 -Wall -Wextra -O2 q1_alternative.cpp -o q1_alternative
+$ ./q1_alternative
+Returned-value version, 45000 after 10% then 15%: 34425
+
+Bytes copied per call
+  long long  by value      : 8
+  long long  by reference  : 0 (an address of 8 bytes is passed)
+  BigStudent by value      : 4104
+  BigStudent by (const) ref: 0 (an address of 8 bytes is passed)
+
+Measured time per call (2000000 calls)
+  BigStudent by value      : 29.8577 ns
+  BigStudent by reference  : 0.573702 ns
+  BigStudent by const ref  : 0.564013 ns

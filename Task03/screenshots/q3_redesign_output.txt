@@ -1,0 +1,9 @@
+$ g++ -std=c++17 -Wall -Wextra q3_redesign.cpp -o q3_redesign
+$ ./q3_redesign
+1. charge(500)        -> [charge(int grams)]     50.00
+2. charge(2.5)        -> [charge(double kg)]     100.00
+3. charge(2)          -> [charge(int grams)]     50.00
+4. charge(2.0f)       -> [charge(double kg)]     80.00
+5. charge(1.2, true)  -> [charge(double kg)]     110.00
+6. charge(p)          -> [charge(const Parcel&)] 213.00
+7. charge(750,true,true) -> [charge(int grams)]     135.00

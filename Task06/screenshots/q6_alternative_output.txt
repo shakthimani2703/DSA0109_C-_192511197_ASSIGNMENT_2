@@ -1,0 +1,4 @@
+$ g++ -std=c++17 -Wall -Wextra q6_alternative.cpp -o q6_alternative
+$ ./q6_alternative
+member : 205 false
+getters: 205 false

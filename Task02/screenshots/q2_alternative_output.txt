@@ -1,0 +1,5 @@
+$ g++ -std=c++17 -Wall -Wextra q2_alternative.cpp -o q2_alternative
+$ ./q2_alternative
+index version  : marks[3] = 93
+pointer version: *p = 95
+after growth, index still valid: v[3] = 96

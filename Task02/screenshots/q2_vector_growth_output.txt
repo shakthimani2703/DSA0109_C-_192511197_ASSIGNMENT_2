@@ -1,0 +1,8 @@
+$ g++ -std=c++17 -Wall -Wextra q2_vector_growth.cpp -o q2_vector_growth
+$ ./q2_vector_growth
+size 4, capacity 4
+reference taken to 91 at 0x55ae779112bc
+after 10 push_back: size 14, capacity 16
+element 91 now lives at   0x55ae7791231c
+Storage MOVED: 'top' is now dangling.
+using the index instead, moderated mark = 93

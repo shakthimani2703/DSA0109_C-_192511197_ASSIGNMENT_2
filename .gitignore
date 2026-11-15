@@ -1,0 +1,7 @@
+# compiled binaries
+*.out
+*.exe
+q[0-9]_*
+!q[0-9]_*.cpp
+!q[0-9]_*_output.png
+!q[0-9]_*_output.txt

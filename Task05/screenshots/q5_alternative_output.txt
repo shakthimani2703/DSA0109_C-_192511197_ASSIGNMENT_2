@@ -1,0 +1,5 @@
+$ g++ -std=c++17 -Wall -Wextra q5_alternative.cpp -o q5_alternative
+$ ./q5_alternative
+(A) global: t1 seat 1, t2 seat 2, t3 seat 1  <- duplicate seat 1 after a stray reset
+(B) Route 12 (Tambaram): Asha: Seat 1 | Bala: Seat 2 | Chitra: Waiting  issued 2
+(B) Route 7 (Avadi): Dev: Seat 1 | Elan: Seat 2  issued 2

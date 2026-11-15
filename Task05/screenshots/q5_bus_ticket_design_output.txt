@@ -1,0 +1,18 @@
+$ g++ -std=c++17 -Wall -Wextra q5_bus_ticket_design.cpp -o q5_bus_ticket_design
+$ ./q5_bus_ticket_design
+Before any ticket: issued = 0
+Array of 8 tickets, capacity 5:
+  Anu: Seat 1
+  Bharath: Seat 2
+  Charu: Seat 3
+  Dinesh: Seat 4
+  Elan: Seat 5
+  Farah: Waiting list #1
+  Gokul: Waiting list #2
+  Hema: Waiting list #3
+Issued = 5, waiting = 3, seats left = 0
+Booking inside a function called twice:
+  Ishaan: Waiting list #4
+  Janani: Waiting list #5
+Issued = 5, waiting = 5
+sizeof(BusTicket) = 40 bytes (the static counters are NOT inside each object)

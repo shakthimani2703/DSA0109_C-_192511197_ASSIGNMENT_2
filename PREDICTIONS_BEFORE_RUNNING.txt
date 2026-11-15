@@ -1,0 +1,21 @@
+Q1 prediction (written before running):
+1 12 13
+1 100
+16 13 6 
+
+Q5 prediction (written before running):
+101 103 104 4
+
+Q3 overload selection predictions (written before running):
+1. charge(500)       -> charge(int)  exact match, 0.5 kg -> 20 -> minimum 50.00
+2. charge(2.5)       -> charge(double) exact match -> 100.00
+3. charge(2)         -> charge(int) exact match -> treated as 2 grams -> 50.00
+4. charge(2.0f)      -> charge(double) float->double promotion beats float->int conversion -> 80.00
+5. charge(1.2, true) -> charge(double) -> 48 -> min 50 + 60 = 110.00
+6. charge(p)         -> charge(const Parcel&) -> 128 + 60 + 25 = 213.00
+7. charge(750,true,true) -> charge(int) -> 30 -> 50 + 60 + 25 = 135.00
+
+Q7 prediction (written before running the redesign):
+Measure: ns per transaction once the history is full, same 1,000,000 deposits, -O2.
+K=10: small gain (about 1-2x); K=50: about 3-6x; K=500: tens of times; K=5000: hundreds of times.
+Redesigned time should stay flat (a few ns) for every K; memory about the same (+ one pointer and two ints).
