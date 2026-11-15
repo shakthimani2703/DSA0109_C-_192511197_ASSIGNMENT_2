@@ -2,7 +2,7 @@
 
 | Field | Details |
 |---|---|
-| Name | [Your Name] |
+| Name | Shakthi M |
 | Register Number | 192511197 |
 | Course | DSA0109 – Object Oriented Programming with C++ |
 | Assignment | Assignment 2 – CO2 (Functions and Object-Oriented Concepts) |
